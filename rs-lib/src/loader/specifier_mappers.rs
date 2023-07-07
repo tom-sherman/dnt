@@ -57,7 +57,7 @@ static SKYPACK_MAPPING_RE: Lazy<Regex> = Lazy::new(|| {
 });
 static ESMSH_MAPPING_RE: Lazy<Regex> = Lazy::new(|| {
   Regex::new(
-    r"^https://esm\.sh/(v\d+/)?(@?[^@?]+)@([0-9.\^~\-A-Za-z]+)(?:/([^#?]+))?$",
+    r"^https://esm\.sh/(v\d+/)?(@?[^@?]+)@([0-9.\^~\-A-Za-z]+)(?:/([^#?]+))?(\?.*)?$",
   )
   .unwrap()
 });
